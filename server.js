@@ -1,5 +1,7 @@
 const express = require('express');
 const { createHandler } = require('graphql-http/lib/use/express');
+const expressPlayground = require('graphql-playground-middleware-express').default;
+
 const { 
   GraphQLSchema,
   GraphQLObjectType,
@@ -15,51 +17,14 @@ const acteurs = require('./data/acteurs');
 const genres = require('./data/genres');
 const regisseurs = require('./data/regisseurs');
 
-// STAP 1: GenreType
-const GenreType = new GraphQLObjectType({
-  name: 'Genre',
-  description: 'Een filmgenre',
-  fields: () => ({
-    id: { 
-      type: new GraphQLNonNull(GraphQLString) 
-    },
-    naam: { 
-      type: new GraphQLNonNull(GraphQLString) 
-    },
-    beschrijving: { 
-      type: GraphQLString 
-    }
-  })
-});
+// ============================================
+// HIER BEGINNEN WE MET STAP 1
+// ============================================
 
+// TODO: GenreType komt hier
 
-const RootQueryType = new GraphQLObjectType({
-  name: 'Query',
-  description: 'Root Query',
-  fields: () => ({
-    genres: {
-      type: new GraphQLList(GenreType),
-      description: 'Lijst van alle genres',
-      resolve: () => genres
-    }
-  })
-});
+// TODO: RootQueryType komt hier
 
+// TODO: Schema komt hier
 
-const schema = new GraphQLSchema({
-  query: RootQueryType
-});
-
-
-const app = express();
-
-
-app.all('/graphql', createHandler({ 
-  schema: schema 
-}));
-
-const PORT = 4000;
-app.listen(PORT, () => {
-  console.log(` Server draait op http://localhost:${PORT}/graphql`);
-  console.log(` Test queries op: http://localhost:${PORT}/graphql`);
-});
+// TODO: Server setup komt hier
