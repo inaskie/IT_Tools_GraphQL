@@ -10,10 +10,12 @@ Downloaden:
 	• Website: https://nodejs.org/
 	• Kies de LTS versie (Long Term Support)
 
-Vervolgens voer het volgende commando uit op uw project:
+Clone deze repository en open dit op Vscode.
+Vervolgens voer het volgende commando uit op uw project in de command prompt:
 npm install
+
 Dit zou volstaan voor dit project. 
 
-Moest dit niet volstaan voer dan zeker dit commando uit voor de juiste package:
+Moest dit niet volstaan voer dan zeker ook dit commando uit voor de juiste package:
 npm install graphql-playground-middleware-express
 
