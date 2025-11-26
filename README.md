@@ -1,6 +1,6 @@
 Wat is er nodig voor dit project:
 
-1. Node.js (Verplicht!)
+Node.js (Verplicht!)
 Minimale versie: Node.js 16.x of hoger Aanbevolen: Node.js 18.x of 20.x (LTS versies)
 Normaal gezien zou iedereen dit al geinstalleerd moeten hebben. Kijk dit na met het volgende commando:  node --version
 Ikzelf heb: v22.14.0
@@ -12,10 +12,12 @@ Downloaden:
 
 Clone deze repository en open dit op Vscode.
 Vervolgens voer het volgende commando uit op uw project in de command prompt:
-npm install
+**npm install**
 
 Dit zou volstaan voor dit project. 
 
 Moest dit niet volstaan voer dan zeker ook dit commando uit voor de juiste package:
-npm install graphql-playground-middleware-express
+**npm install graphql-playground-middleware-express**
+
+
 
